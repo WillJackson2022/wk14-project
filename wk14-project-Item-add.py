@@ -1,7 +1,5 @@
 import boto3
 
-# replace the keys below
-
 dynamodb = boto3.resource(
     'dynamodb',
     aws_access_key_id='AKIAVO3PXH44OC4GR6X2',
@@ -78,10 +76,4 @@ with table.batch_writer() as batch:
             }
     )
 
-
-# Wait until the table exists.
-#table.wait_until_exists()
-
-# Print out some data about the table.
-#print(table.item_count)
 print(table.creation_date_time)
