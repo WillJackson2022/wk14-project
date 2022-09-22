@@ -2,8 +2,8 @@ import boto3
 
 dynamodb = boto3.resource(
     'dynamodb',
-    aws_access_key_id='AKIAVO3PXH44OC4GR6X2',
-    aws_secret_access_key='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',
+    aws_access_key_id='xxxxxxxxxxxxxxxxxxxxx',
+    aws_secret_access_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     )
     
 table = dynamodb.Table('Rap_Top_10')
